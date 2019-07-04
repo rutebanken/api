@@ -20,7 +20,9 @@
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "config": "node -e \"console.log(JSON.stringify(require( 'pelias-config' ).generate(require('./schema')), null, 2))\"",
     "check-dependencies": "node_modules/.bin/npm-check --production --ignore pelias-interpolation",
-    "prune": "npm prune"
+    "prune": "npm prune",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -66,7 +68,8 @@
     "predicates": "^2.0.0",
     "retry": "^0.10.1",
     "stats-lite": "^2.0.4",
-    "through2": "^2.0.3"
+    "through2": "^2.0.3",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "ciao": "^1.0.0",
@@ -91,5 +94,6 @@
     "validate",
     "test",
     "check-dependencies"
-  ]
+  ],
+  "snyk": true
 }
