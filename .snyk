@@ -1,0 +1,34 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - lodash:
+        patched: '2020-05-01T06:35:57.695Z'
+    - async > lodash:
+        patched: '2020-05-01T06:35:57.695Z'
+    - pelias-config > lodash:
+        patched: '2020-05-01T06:35:57.695Z'
+    - pelias-labels > lodash:
+        patched: '2020-05-01T06:35:57.695Z'
+    - pelias-microservice-wrapper > lodash:
+        patched: '2020-05-01T06:35:57.695Z'
+    - pelias-model > lodash:
+        patched: '2020-05-01T06:35:57.695Z'
+    - pelias-query > lodash:
+        patched: '2020-05-01T06:35:57.695Z'
+    - pelias-sorting > lodash:
+        patched: '2020-05-01T06:35:57.695Z'
+    - pelias-text-analyzer > lodash:
+        patched: '2020-05-01T06:35:57.695Z'
+    - pelias-logger > pelias-config > lodash:
+        patched: '2020-05-01T06:35:57.695Z'
+    - pelias-model > pelias-config > lodash:
+        patched: '2020-05-01T06:35:57.695Z'
+    - pelias-text-analyzer > pelias-config > lodash:
+        patched: '2020-05-01T06:35:57.695Z'
+    - pelias-text-analyzer > pelias-logger > pelias-config > lodash:
+        patched: '2020-05-01T06:35:57.695Z'
+    - pelias-microservice-wrapper > pelias-logger > pelias-config > lodash:
+        patched: '2020-05-01T06:35:57.695Z'
