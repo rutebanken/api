@@ -14,6 +14,7 @@ var sanitizeAll = require('../sanitizer/sanitizeAll'),
       private: require('../sanitizer/_flag_bool')('private', false),
       geo_reverse: require('../sanitizer/_geo_reverse')(),
       boundary_country: require('../sanitizer/_boundary_country')(),
+      tariff_zone_authorities: require('../sanitizer/_tariff_zone_authorities')(),
       request_language: require('../sanitizer/_request_language')()
     };
 
